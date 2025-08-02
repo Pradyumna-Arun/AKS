@@ -10,23 +10,16 @@ pool:
 
 steps:
 - task: TerraformCLI@0
-  displayName: Terraform Init
+  displayName: Terraform Initialization
   inputs:
     command: 'init'
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
-  displayName: Terraform Plan
+  displayName: Terraform Planning
   inputs:
     command: 'plan'
-    environmentServiceName: 'youtube-app-service-connection'
-    allowTelemetryCollection: false
-
-- task: TerraformCLI@0
-  displayName: Terraform Apply
-  inputs:
-    command: 'apply'
-    environmentServiceName: 'youtube-app-service-connection'
+    environmentServiceName: 'Azure subscription 1(f0933634-3407-4c6f-9a60-005b66fa194b)'
     allowTelemetryCollection: true
 
 
