@@ -21,5 +21,3 @@ steps:
     command: 'plan'
     environmentServiceName: 'Azure subscription 1(f0933634-3407-4c6f-9a60-005b66fa194b)'
     allowTelemetryCollection: true
-
-
